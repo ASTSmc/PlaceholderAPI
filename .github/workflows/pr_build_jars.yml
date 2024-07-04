@@ -30,7 +30,7 @@ jobs:
     - name: Upload a Build Artifact
       uses: actions/upload-artifact@v4.3.3
       with:
-        name: asts
+        name: asts-java${{ matrix.java-version }}
         path: build/libs/*
         retention-days: 0
         compression-level: 6
